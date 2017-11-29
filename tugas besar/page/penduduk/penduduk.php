@@ -25,15 +25,16 @@
                                     <tbody>
                                         <?php  
 
+                                            $no = 0;
                                             $sql = $koneksi -> query("select * from penduduk" );
 
                                             while ($data = $sql -> fetch_assoc()){
-
+                                                $no++;
                                             
 
                                         ?>
                                         <tr>
-                                            <td><?php echo $data['id']; ?></td>
+                                            <td><?php echo $no; ?></td>
                                             <td><?php echo $data['nik']; ?></td>
                                             <td><?php echo $data['nama']; ?></td>
                                             <td><?php echo $data['alamat']; ?></td>
