@@ -23,3 +23,27 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php  
+
+                                            $sql = $koneksi -> query("select * from penduduk" );
+
+                                            while ($data = $sql -> fetch_assoc()){
+
+                                            
+
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $data['id']; ?></td>
+                                            <td><?php echo $data['nik']; ?></td>
+                                            <td><?php echo $data['nama']; ?></td>
+                                            <td><?php echo $data['alamat']; ?></td>
+                                            <td><?php echo $data['pekerjaan']; ?></td>
+                                            <td><?php echo $data['pendapatan']; ?></td>
+                                            <td><?php echo $data['jumlah_anggota_keluarga']; ?></td>
+                                            <td>
+                                                <a href="" class="btn btn-info" >Ubah</a>
+                                                  <a href="" class="btn btn-danger" >Hapus</a>
+                                            </td>
+                                        </tr>
+                                        <?php } ?>
+                                    </tbody>
