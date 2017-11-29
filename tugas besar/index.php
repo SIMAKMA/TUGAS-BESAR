@@ -68,8 +68,8 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                             include "page/penduduk/penduduk.php";
                         }
 
-                    }k
-                  ?>
+                    }
+                  ?>Fadil
                        
                     </div>
                 </div>
