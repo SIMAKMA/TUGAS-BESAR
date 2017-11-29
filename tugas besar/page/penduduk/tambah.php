@@ -45,15 +45,19 @@
 </div>
 
 <?php
-    $nik = isset ($_POST ['nik']);
-    $nama = isset ($_POST ['nama']);
-    $alamat = isset ($_POST ['alamat']);
-    $pekerjaan = isset ($_POST ['pekerjaan']);
-    $pendapatan = isset ($_POST ['pendapatan']);
-    $jumlah_anggota_keluarga = isset ($_POST ['jumlah_anggota_keluarga']);
+error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+
+    $nik = ($_POST ['nik']);
+    $nama = $_POST ['nama'];
+    $alamat = $_POST ['alamat'];
+    $pekerjaan = $_POST ['pekerjaan'];
+    $pendapatan = $_POST ['pendapatan'];
+    $jumlah_anggota_keluarga =$_POST ['jumlah_anggota_keluarga'];
+
+    $simpan =$_POST['simpan'];
 
     if ($simpan) {
-        $sql = $koneksi->query("insert into penduduk (nik, nama, alamat, pekerjaan, pendapatan, jumlah_anggota_keluarga) values('$nik', '$nama', '$alamat', '$pekerjaan', '$pendapatan', '$jumlah_anggota_keluarga')");
+        $sql = $koneksi->query("INSERT INTO penduduk(nik, nama, alamat, pekerjaan, pendapatan, jumlah_anggota_keluarga) VALUES ('$nik', '$nama', '$alamat', '$pekerjaan', '$pendapatan', '$jumlah_anggota_keluarga')");
 
         if ($sql) {
             ?>
