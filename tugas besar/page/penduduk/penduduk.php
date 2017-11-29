@@ -1,9 +1,11 @@
- <div class="row">
+<a href="?page=penduduk&aksi=tambah">Tambah Data</a>
+
+<div class="row">
                 <div class="col-md-12">
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                             Advanced Tables
+                             Data Buku
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
