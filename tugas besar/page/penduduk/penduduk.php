@@ -1,4 +1,4 @@
-<a href="?page=penduduk&aksi=tambah" class="btn btn-primary" style="margin-bottom; 5px;">Tambah Data</a>
+<a href="?page=penduduk&aksi=tambah" class="btn btn-primary" style="margin-bottom: 5px;">Tambah Data</a>
 
 <div class="row">
                 <div class="col-md-12">
