@@ -71,7 +71,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         if($page == "penduduk"){
                             if($aksi == ""){
                             include "page/penduduk/penduduk.php";
-                        }
+                        } elseif ($aksi == "tambah"){
+		            include "page/penduduk/tambah.php";
+			}
 
                     }
                   ?>
